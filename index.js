@@ -17,11 +17,11 @@ $(function(){
           $('.shopping-list').append(newItem);
         });
  
-        $('.shopping-item-delete').on('click', function(event) {
+        $('ul').on('click',".shopping-item-delete", function(event) {
             $(event.target).closest('li').remove(); //target is the item that is selected
         });
 
-        $('.shopping-item-toggle').on('click', function(event) {
+        $('ul').on('click', ".shopping-item-toggle", function(event) {
             //when check is clicked
             //item becomes crossed out
             $(event.target).closest('li').children('span').toggleClass('shopping-item__checked');
