@@ -15,6 +15,7 @@ $(function(){
             </div>
           </li>`
           $('.shopping-list').append(newItem);
+          $('#shopping-list-entry').val('');
         });
  
         $('ul').on('click',".shopping-item-delete", function(event) {
